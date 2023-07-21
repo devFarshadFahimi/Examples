@@ -1,0 +1,13 @@
+global using System.Text;
+global using System.Net.Http.Headers;
+global using System.Text.Encodings.Web;
+global using Microsoft.AspNetCore.Authentication;
+global using Microsoft.Extensions.Options;
+global using System.Security.Claims;
+global using System.IdentityModel.Tokens.Jwt;
+global using Microsoft.AspNetCore.Authorization;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.IdentityModel.Tokens;
+global using Microsoft.AspNetCore.Authentication.JwtBearer;
+global using BasicAndJwtAuthenticationTogether.Handlers;
+global using BasicAndJwtAuthenticationTogether.Models;

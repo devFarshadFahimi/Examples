@@ -1,0 +1,20 @@
+﻿###
+GET https://localhost:7001/api/Home/GetBasicToken
+Content-Type: application/json
+
+> {% client.global.set("basic_auth_token", response.body.toString()); %}
+
+###
+GET https://localhost:7001/api/Home/GetBasicResponse
+Authorization: Basic {{basic_auth_token}}
+
+###
+GET https://localhost:7001/api/Home/GetJWTToken
+Content-Type: application/json
+
+> {% client.global.set("jwt_auth_token", response.body.toString()); %}
+
+###
+GET https://localhost:7001/api/Home/GetJWTResponse
+Authorization: Bearer {{jwt_auth_token}}
+
